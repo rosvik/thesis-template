@@ -1,0 +1,5 @@
+
+# Docs: http://mirrors.ctan.org/support/latexindent/documentation/latexindent.pdf
+lookForAlignDelims:
+  longtable: 0
+  tabular: 0

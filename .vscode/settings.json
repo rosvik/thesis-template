@@ -1,0 +1,109 @@
+{
+	// .tex
+	"[latex]": {
+		"editor.wordWrap": "wordWrapColumn",
+		"editor.rulers": [
+			80
+		],
+		"editor.wordWrapColumn": 80,
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true
+	},
+	// .bib
+	"[bibtex]": {
+		"editor.wordWrap": "wordWrapColumn",
+	},
+	// LaTeX Workshop
+	// https://github.com/James-Yu/LaTeX-Workshop/wiki
+	"latex-workshop.message.update.show": false,
+	"latex-workshop.message.warning.show": false,
+	"latex-workshop.view.pdf.viewer": "tab",
+	"latex-workshop.bibtex-format.sort.enabled": true,
+	"latex-workshop.message.badbox.show": false,
+	"latex-workshop.progress.enabled": false,
+	"latex-workshop.latex.autoClean.run": "onBuilt",
+	"latex-workshop.latex.clean.subfolder.enabled": true,
+	"latex-workshop.latex.clean.fileTypes": [
+		"*.aux",
+		"*.bbl",
+		"*.blg",
+		"*.idx",
+		"*.ind",
+		"*.lof",
+		"*.lot",
+		"*.out",
+		"*.toc",
+		"*.acn",
+		"*.acr",
+		"*.alg",
+		"*.glg",
+		"*.glo",
+		"*.gls",
+		"*.fls",
+		"*.log",
+		"*.fdb_latexmk",
+		"*.snm",
+		"*.synctex(busy)",
+		"*.synctex.gz",
+		"*.synctex.gz(busy)",
+		"*.nav",
+		"*-blx.bib",
+		"*.bcf",
+		"*.run.xml",
+		"__latexindent_temp.tex",
+	],
+	"latex-workshop.latex.tools": [
+		{
+			"name": "pdflatex",
+			"command": "pdflatex",
+			"args": [
+				"-synctex=1",
+				"-interaction=nonstopmode",
+				"-file-line-error",
+				"-output-directory=%OUTDIR%",
+				"%DOC%"
+			],
+			"env": {}
+		},
+		{
+			"name": "bibtex",
+			"command": "bibtex",
+			"args": [
+				"%DOCFILE%"
+			],
+			"env": {}
+		}
+	],
+	"latex-workshop.latex.recipes": [
+		{
+			"name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
+			"tools": [
+				"pdflatex",
+				"bibtex",
+				"pdflatex",
+				"pdflatex"
+			]
+		}
+	],
+	"latex-workshop.message.latexlog.exclude": [
+		"Overfull",
+		"Rerun to get cross-references right.",
+		"Marginpar on page"
+	],
+	"latex-workshop.linting.chktex.exec.path": "chktex",
+	"latex-workshop.linting.chktex.exec.args": [
+		"-wall",
+		"-n22",
+		"-n30",
+		"-e16",
+		"-q"
+	],
+	"latex-workshop.linting.run": "onType",
+	"latex-workshop.latexindent.args": [
+		"-c",
+		"%DIR%/",
+		"%TMPFILE%",
+		"-y=defaultIndent: '%INDENT%', ",
+		"-l=%DIR%/indentconfig.yaml"
+	],
+}

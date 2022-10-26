@@ -1,0 +1,42 @@
+\ProvidesPackage{config}
+
+\usepackage[T1]{fontenc}          % T1 (8-bit) font encoding
+\usepackage[utf8]{inputenc}       % Accept accented characters
+\usepackage{amsmath}
+\usepackage{graphicx}             % Include images nicely
+\usepackage{libertine}            % Text font
+\usepackage[libertine]{newtxmath} % Math font
+\usepackage{inconsolata}          % Monospace font
+\usepackage[final, nopatch=footnote]{microtype}     % Text justification
+\usepackage[hidelinks]{hyperref}  % Links in document
+\usepackage{breakcites}           % Linebreak citations
+% \usepackage[
+%   backend=bibtex, style=ieee, doi=false, url=false, isbn=false
+% ]{biblatex}
+\usepackage[super]{natbib}
+\usepackage{setspace}             % Custom line spacing
+\usepackage{epstopdf}             % Convert .eps to .pdf for pdflatex compatability
+\usepackage{enumitem}             % Enable resuming of enumerated lists
+
+\setlength{\marginparwidth}{2cm}  % \todo width
+\usepackage[size=footnotesize]{todonotes}
+\usepackage[font=itshape,indentfirst=false,vskip=.5em]{quoting}
+\usepackage{array, booktabs, longtable}
+\usepackage{balance}
+\usepackage{afterpage}
+\usepackage{pdfpages}
+
+\onehalfspacing                   % Line spacing 1.5
+\renewcommand{\arraystretch}{1.2} % Table line spacing
+\setcounter{secnumdepth}{3}       % Table of contents depth
+
+% Make ligatures copyable from pdf
+\pdfgentounicode=1
+\input{glyphtounicode}
+
+% Define chapter names for abstracts
+\newcommand*{\englishabstractname}{Abstract}
+\newcommand*{\norwegianabstractname}{Sammendrag}
+
+% Timeline table command
+\newcommand{\foo}{\makebox[0pt]{\textbullet}\hskip-0.5pt\vrule width 1pt\hspace{\labelsep}}

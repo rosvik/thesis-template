@@ -1,0 +1,65 @@
+% Page size: B5
+% Font size: 10pt
+\documentclass[10pt,b5paper,twoside,openright]{book}
+\usepackage{config}
+
+\begin{document}
+
+\def\mytitle{My Thesis}
+\title{\mytitle}
+
+\def\myauthor{John Doe}
+\author{\myauthor}
+
+% Front page from template. For more information on generating a NTNU thesis
+% front page see https://daimarkiv.idi.ntnu.no/faq_innlevering.php and
+% https://www.ntnu.no/grafisksenter/bestillingsalternativer
+\includepdf[pages={1,2,3,4}]{assets/cover.pdf}
+
+\frontmatter
+\pagestyle{plain}
+\begingroup
+\let\cleardoublepage\clearpage
+
+% Abstract in English and Norwegian
+\input{sections/0-abstract}
+\input{sections/0-sammendrag}
+
+\tableofcontents \clearpage
+\listoftables    \clearpage
+\listoffigures   \clearpage
+\endgroup
+
+\mainmatter{}
+\pagestyle{headings}
+
+% Chapters
+\chapter{Introduction}\label{ch:introduction}
+\input{sections/1-introduction}
+
+\chapter{Literature Study}\label{ch:literature-study}
+\input{sections/2-literature-study}
+
+\chapter{Method}\label{ch:method}
+\input{sections/3-method}
+
+\chapter{Results}\label{ch:results}
+\input{sections/4-results}
+
+\chapter{Discussion}\label{ch:discussion}
+\input{sections/5-discussion}
+
+\chapter{Conclusion}\label{ch:conclusion}
+\input{sections/6-conclusion}
+
+\begin{flushleft}
+	\bibliographystyle{apalike}
+	\bibliography{references}
+	\addcontentsline{toc}{chapter}{Bibliography}
+\end{flushleft}
+
+% Back page from template
+\includepdf[pages={5}]{assets/cover.pdf}
+
+\end{document}
+\endinput
