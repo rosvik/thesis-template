@@ -1,6 +1,4 @@
-# The Motivational Differences in Commercial Open Source: A Case Study on Collaboration Between Big Tech and Volunteers
-
-by [Johannes T. Røsvik](https://github.com/rosvik)
+# Thesis
 
 
 <!-- Replace the urls here to get a badge of build status -->
