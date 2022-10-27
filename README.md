@@ -1,12 +1,14 @@
 # Thesis
 
 
-<!-- Replace the urls here to get a badge of build status -->
+<!-- Replace the urls here to get a badge of build status. You can find yours at [your-repo-url]/actions/workflows/build-latex.yml > "..." > "Create status badge". (Or just replace the repo refrence in the URLs below) -->
 
-<!-- [![Build LaTeX document](https://github.com/rosvik/master-thesis/workflows/Build%20LaTeX%20document/badge.svg)](https://github.com/rosvik/master-thesis/actions/workflows/build-latex.yml) -->
+[![Build LaTeX document](https://github.com/rosvik/thesis/workflows/Build%20LaTeX%20document/badge.svg)](https://github.com/rosvik/thesis/actions/workflows/build-latex.yml)
 
 
 ## PDF download
+
+<!-- Update the urls here to get direct links to downloads -->
 
 Latest version: [Download](https://github.com/rosvik/thesis/releases/latest/download/main.pdf)
 

@@ -11,9 +11,13 @@
 \def\myauthor{John Doe}
 \author{\myauthor}
 
-% Front page from template. For more information on generating a NTNU thesis
-% front page see https://daimarkiv.idi.ntnu.no/faq_innlevering.php and
-% https://www.ntnu.no/grafisksenter/bestillingsalternativer
+% The first few pages of a NTNU thesis is added from a generated PDF. For
+% information on generating your own front page with your own title, see
+% https://daimarkiv.idi.ntnu.no/faq_innlevering.php and
+% https://www.ntnu.no/grafisksenter/bestillingsalternativer.
+%
+% After it is generated, and it has the same set of pages as cover.pdf, replace
+% it with your own.
 \includepdf[pages={1,2,3,4}]{assets/cover.pdf}
 
 \frontmatter
