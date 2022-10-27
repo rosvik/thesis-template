@@ -15,13 +15,12 @@
 	},
 	// LaTeX Workshop
 	// https://github.com/James-Yu/LaTeX-Workshop/wiki
-	"latex-workshop.message.update.show": false,
 	"latex-workshop.message.warning.show": false,
 	"latex-workshop.view.pdf.viewer": "tab",
 	"latex-workshop.bibtex-format.sort.enabled": true,
 	"latex-workshop.message.badbox.show": false,
-	"latex-workshop.progress.enabled": false,
 	"latex-workshop.latex.autoClean.run": "onBuilt",
+	"latex-workshop.latex.autoBuild.run": "onSave",
 	"latex-workshop.latex.clean.subfolder.enabled": true,
 	"latex-workshop.latex.clean.fileTypes": [
 		"*.aux",
