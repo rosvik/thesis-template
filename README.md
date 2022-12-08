@@ -16,6 +16,12 @@ Older versions can be found in [releases](https://github.com/rosvik/thesis/relea
 
 ## Installation / Setup
 
+Installing LaTeX locally isn't the most straight forward thing in the world, but this will hopefully guide you trough most of it 🤞 However, this is the recipie for macOS only, so you will probably need to adjust a bit if you're on another OS. 
+
+We'll look at setting up TeX Live, a bunch of packages, latexindent and finally some configuration of VS Code.
+
+### Setting up TeX Live
+
 Using [TeX Live](https://tug.org/texlive/quickinstall.html)/[tlmgr](https://www.tug.org/texlive/tlmgr.html) (TeX Live package manager) and [ctan.org](https://www.ctan.org/) to install packages.
 
 Installing `tlmgr` with a basic set of default packages (~300MB):
