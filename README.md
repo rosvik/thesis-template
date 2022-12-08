@@ -41,7 +41,7 @@ export MANPATH="/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH"
 export INFOPATH="/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH"
 ```
 
-After a restart of your terminal, the `tlmgr` should be available.
+After a restart of your terminal, the `tlmgr` command should be available.
 
 Finally, set the package repository, and check for updates to packages (may need sudo):
 
