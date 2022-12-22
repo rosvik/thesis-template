@@ -12,7 +12,7 @@
 
 Latest version: [Download](https://github.com/rosvik/thesis/releases/latest/download/main.pdf)
 
-Older versions can be found in [releases](https://github.com/rosvik/thesis/releases/).
+Older versions can be found under [Releases](https://github.com/rosvik/thesis/releases/).
 
 ## Installation / Setup
 
