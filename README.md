@@ -8,7 +8,7 @@
 
 ## PDF download
 
-<!-- Update the urls here to get direct links to downloads -->
+<!-- Update the urls here to get direct links to downloads. The URL will point to the latest release _not_ marked as pre-release. -->
 
 Latest version: [Download](https://github.com/rosvik/thesis/releases/latest/download/main.pdf)
 
