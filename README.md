@@ -14,9 +14,15 @@ Latest version: [Download](https://github.com/rosvik/thesis/releases/latest/down
 
 Older versions can be found under [Releases](https://github.com/rosvik/thesis/releases/).
 
-## Installation / Setup
+## GitHub setup
 
-Installing LaTeX locally isn't the most straight forward thing in the world, but this will hopefully guide you trough most of it. However, this is the recipie for macOS only, so you will probably need to adjust a bit if you're on another OS. 
+To make your own thesis repo, create one by clicking "Use this template" -> "Create a new repository" above, and give it a fitting name. Clone it to your machine, and continue to set up LaTeX and a local writing environment in VS Code with the instructions below.
+
+To make the GitHub actions build system work, you need to give write access to your repo. Do this by going to "Settings" -> "Actions" -> "General", and enable "Read and write permissions" under "Workflow permissions". After pushing changes or manually running the action, you should see a pre-release show up under "Releases".
+
+## Local environment setup
+
+Installing LaTeX locally isn't the most straight forward thing in the world, but this will hopefully guide you trough most of it. However, this is the recipie for macOS only, so you will probably need to adjust a bit if you're on another OS.
 
 We'll look at setting up TeX Live, a bunch of packages, latexindent and finally some configuration of VS Code.
 
@@ -87,6 +93,8 @@ My Visual Studio Code configuration for LaTeX and BibTeX is included in [.vscode
 The rest of my VS Code configurations are available at [rosvik/dotfiles -> vscode/settings.json](https://github.com/rosvik/dotfiles/blob/master/vscode/settings.json)
 
 ## Generate PDF
+
+A PDF is generated automatically on every save in VS Code, as well as on every push through the [`build-latex.yml` GitHub Action](.github/workflows/build-latex.yml). If you want to generate a PDF manually, run:
 
 ```
 bibtex main.aux && pdflatex -synctex=1 -interaction=nonstopmode \
