@@ -22,7 +22,7 @@ To make the GitHub actions build system work, you need to give write access to y
 
 ## Local environment setup
 
-Installing LaTeX locally isn't the most straight forward thing in the world, but this will hopefully guide you trough most of it. However, this is the recipie for macOS only, so you will probably need to adjust a bit if you're on another OS.
+Installing LaTeX locally isn't the most straight forward thing in the world, but this will hopefully guide you trough most of it. This is the recipie for macOS only, so you will probably need to adjust a bit if you're on another OS.
 
 We'll look at setting up TeX Live, a bunch of packages, latexindent and finally some configuration of VS Code.
 
